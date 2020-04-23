@@ -9,5 +9,6 @@ class Person {
         console.log(`Hello, my name is ${this.name} and I am ${this.age} years old. My interests are ${this.interest}.`)
     }
 }
-let person = new Person('Rixongile', 22, 'female', ['being a smartworker', ' reading', ' agile', ' ssd hard drives'])
-person.hello()
+let person = new Person('Ryan', 30, 'male', [' being a hardarse', ' agile', ' ssd hard drives'])
+let greeting = person.hello()
+    //console.log(greeting)
