@@ -1,0 +1,19 @@
+{
+  "name": "person",
+  "version": "1.0.0",
+  "description": "An project on creating a class called Person",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lednah88/Person.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lednah88/Person/issues"
+  },
+  "homepage": "https://github.com/lednah88/Person#readme"
+}
