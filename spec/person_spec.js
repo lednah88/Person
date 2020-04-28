@@ -7,8 +7,10 @@ describe("person", function() {
     it("should return age", function() {
         expect(person.age).toEqual(30)
     })
-    it("should return gender", function() {
-        expect(person.gender).toEqual('male')
+    it("should return male", function() {
+        expect(person.gender).toEqual("male")
     })
-
+    it("should return first interest", function() {
+        expect(person.interest).toBeDefined([' being a hardarse', ' agile', ' ssd hard drives'])
+    })
 })
