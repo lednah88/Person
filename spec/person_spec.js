@@ -1,22 +1,27 @@
-const { person } = require("../src/person")
-
+const { Person } = require("../src/person");
+let person1 = new Person("Ryan", 30, "male", [
+    " being a hardarse",
+    " agile",
+    " ssd hard drives",
+]);
 describe("person", function() {
     it("should return name", function() {
-        expect(person.name).toEqual("Ryan")
-    })
+        expect(person1.name).toEqual("Ryan");
+    });
     it("should return age", function() {
-        expect(person.age).toEqual(30)
-    })
-    it("should return male", function() {
-        expect(person.gender).toEqual("male")
-    })
-    it("should return first interest", function() {
-        expect(person.interest[0]).toEqual(' being a hardarse')
-    })
-    it("should return second interest", function() {
-        expect(person.interest[1]).toEqual(' agile')
-    })
-    it("should return last interest", function() {
-        expect(person.interest[2]).toEqual(' ssd hard drives')
-    })
-})
+        expect(person1.age).toEqual(30);
+    });
+    it("should return gender", function() {
+        expect(person1.gender).toEqual("male");
+    });
+    it("should return all the interests for person", function() {
+        expect(person1.interest).toEqual([
+            " being a hardarse",
+            " agile",
+            " ssd hard drives",
+        ]);
+    });
+    it("should be able to say hello", function() {
+        expect(person1.hello()).toEqual("Hello, my name is Ryan and I am 30 years old. My interests are  being a hardarse, agile and  ssd hard drives.");
+    });
+});
